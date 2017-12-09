@@ -8304,6 +8304,18 @@ ol {
   header, header nav, .header-heading {
     min-height: 100vh; } }
 
+nav a {
+  border-bottom: 1px dotted #fff; }
+  nav a:hover {
+    color: #fff; }
+  @media screen and (min-width: 960px) {
+    nav a {
+      border-bottom: 1px dotted #488391; }
+      nav a:hover {
+        color: #488391; } }
+  nav a:hover {
+    border-bottom-color: transparent; }
+
 @media screen and (min-width: 960px) {
   .spacer {
     height: 100vh; } }

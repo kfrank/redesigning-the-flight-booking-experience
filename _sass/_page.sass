@@ -2,6 +2,17 @@ header, header nav, .header-heading
   @media screen and (min-width: $lg)
     min-height: 100vh
 
+nav a
+  border-bottom: 1px dotted #fff
+  &:hover
+    color: #fff
+  @media screen and (min-width: $lg)
+    border-bottom: 1px dotted #488391
+    &:hover
+      color: #488391
+  &:hover
+    border-bottom-color: transparent
+
 .spacer
   @media screen and (min-width: $lg)
     height: 100vh
