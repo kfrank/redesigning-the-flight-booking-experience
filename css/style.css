@@ -8304,6 +8304,10 @@ ol {
   header, header nav, .header-heading {
     min-height: 100vh; } }
 
+.logo:hover {
+  color: #fff;
+  border-bottom: none !important; }
+
 nav a {
   border-bottom: 1px dotted #fff; }
   nav a:hover {
