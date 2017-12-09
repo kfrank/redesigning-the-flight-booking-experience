@@ -1,0 +1,46 @@
+header, header nav, .header-heading
+  @media screen and (min-width: $lg)
+    min-height: 100vh
+
+.spacer
+  @media screen and (min-width: $lg)
+    height: 100vh
+
+.gradient-bg-blue
+  background: #4f36cc
+  background: -webkit-linear-gradient(top left,#4f36cc,#21a1d3)
+  background: -o-linear-gradient(top left,#4f36cc,#21a1d3)
+  background: -moz-linear-gradient(top left,#4f36cc,#21a1d3)
+  background: linear-gradient(top left, #4f36cc, #21a1d3)
+  &-xs
+    background: #4f36cc
+    background: -webkit-linear-gradient(top left,#4f36cc,#21a1d3)
+    background: -o-linear-gradient(top left,#4f36cc,#21a1d3)
+    background: -moz-linear-gradient(top left,#4f36cc,#21a1d3)
+    background: linear-gradient(top left, #4f36cc, #21a1d3)
+  &-lg
+    @media screen and (min-width: $lg)
+      background: #4f36cc
+      background: -webkit-linear-gradient(top left,#4f36cc,#21a1d3)
+      background: -o-linear-gradient(top left,#4f36cc,#21a1d3)
+      background: -moz-linear-gradient(top left,#4f36cc,#21a1d3)
+      background: linear-gradient(top left, #4f36cc, #21a1d3)
+
+.bg-white
+  &-lg
+    @media screen and (min-width: $lg)
+      background: #fff
+
+.text-color-white
+  &-xs
+    @media screen and (max-width: $lg)
+      color: #fff
+
+.overflow-scroll
+  @media screen and (min-width: $lg)
+    height: 100%
+    overflow-y: scroll
+
+.min-vh-100-lg
+  @media screen and (min-width: $lg)
+    min-height: 100vh

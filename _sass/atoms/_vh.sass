@@ -1,0 +1,35 @@
+// Viewport height
+$vhs: 25, 30, 50, 60, 75, 80, 100
+
+@mixin view-height-style($suffix)
+  
+  @each $increment in $vhs
+    .vh-#{$increment}-#{$suffix}
+      height: #{$increment}vh !important
+
+// Adds media queries to width-height style mixin
+@mixin view-height($suffix, $media: null)
+
+  // We want to use @media screen whenever no $media
+  // is passed into the mixin
+  @if length($media) == 2
+    +media($media)
+      +view-height-style($suffix)
+  @else
+    @media screen
+      +view-height-style($suffix)
+
+// Extra Small width-height classes
++view-height(xs)
+
+// Small width-height classes
++view-height(sm, min-width $sm)
+
+// Medium width-height classes
++view-height(md, min-width $md)
+
+// Large width-height classes
++view-height(lg, min-width $lg)
+
+// Extra Large width-height classes
++view-height(xl, min-width $xl)
