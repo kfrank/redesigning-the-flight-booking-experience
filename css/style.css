@@ -8325,6 +8325,8 @@ nav a {
   @media screen and (min-width: 960px) {
     .section-header {
       top: 1.5rem; } }
+  .section-header.fixed-lg {
+    max-width: 30%; }
 
 @media screen and (min-width: 960px) {
   .spacer {
